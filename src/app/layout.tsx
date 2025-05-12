@@ -13,6 +13,7 @@ const headerSans = Overpass({
 const second = Archivo_Black({
   variable: '--font-archivoblack',
   weight: '400',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
