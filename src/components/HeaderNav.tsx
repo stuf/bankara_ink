@@ -11,6 +11,11 @@ const navItems = [
     label: 'About',
     href: '/about',
   },
+  {
+    id: 'refs',
+    label: 'Reference',
+    href: '/ref',
+  },
 ];
 
 export default function HeaderNav() {
