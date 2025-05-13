@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { Archivo_Black, Overpass } from 'next/font/google';
 import './globals.css';
 import { ReactNode } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const headerSans = Overpass({
   variable: '--font-overpass',

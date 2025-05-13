@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export interface Props {
   title: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export default function ContentPageLayout(props: Props) {
