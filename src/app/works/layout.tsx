@@ -1,5 +1,6 @@
-import { Metadata } from 'next';
 import { ReactNode } from 'react';
+
+import { Metadata } from 'next';
 
 export interface Props {
   children: ReactNode;

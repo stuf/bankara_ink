@@ -1,7 +1,8 @@
-import { WorkItem } from '@/types/work';
-import Image from 'next/image';
-import { format } from 'date-fns';
 import { ArrowBendUpRight } from '@phosphor-icons/react';
+import { format } from 'date-fns';
+import Image from 'next/image';
+
+import { WorkItem } from '@/types/work';
 
 export interface Props {
   imageSize?: number;
