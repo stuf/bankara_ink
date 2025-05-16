@@ -1,22 +1,6 @@
 import NavLink from './NavLink';
 
-const navItems = [
-  {
-    id: 'works',
-    label: 'Works',
-    href: '/works',
-  },
-  {
-    id: 'about',
-    label: 'About',
-    href: '/about',
-  },
-  {
-    id: 'refs',
-    label: 'Reference',
-    href: '/ref',
-  },
-];
+import { navItems } from '@/content/headerNav';
 
 export default function HeaderNav() {
   return (
