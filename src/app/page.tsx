@@ -1,3 +1,5 @@
+import FrontPageLayout from '@/layouts/FrontPageLayout';
+
 export default function Home() {
-  return <main></main>;
+  return <FrontPageLayout>aksjh</FrontPageLayout>;
 }
