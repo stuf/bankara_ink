@@ -26,8 +26,6 @@ function getBackgroundImage(srcSet: string = '') {
 export default function FrontPageLayout(props: Props) {
   const imgProps = getImageProps({ alt: '', src: img });
 
-  console.log({ imgProps });
-
   const style = {
     height: '100vh',
     width: '100vw',
@@ -48,13 +46,15 @@ export default function FrontPageLayout(props: Props) {
           <div>
             <nav>
               <ul className="space-y-4 text-4xl">
-                {navItems.map(it => (
-                  <li key={it.id}>
-                    <Link href={it.href} className="text-white bg-black">
-                      {it.label}
-                    </Link>
-                  </li>
-                ))}
+                {navItems
+                  .filter(it => !it.disabled)
+                  .map(it => (
+                    <li key={it.id}>
+                      <Link href={it.href} className={`text-white bg-black`}>
+                        {it.label}
+                      </Link>
+                    </li>
+                  ))}
               </ul>
             </nav>
           </div>
